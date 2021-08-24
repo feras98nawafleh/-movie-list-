@@ -70,13 +70,11 @@ Movie.prototype.renderBody = function () {
   td2.innerText = this.name;
   tr.appendChild(td2);
 
-  let td3 = document.createElement('td');
-  td3.innerText = this.category;
-  tr.appendChild(td3);
 
-  let td4 = document.createElement('td');
-  td4.innerText = this.release;
-  tr.appendChild(td4);
+
+  let td3 = document.createElement('td');
+  td3.innerText = this.release;
+  tr.appendChild(td3);
 };
 movies.forEach(movie => {
   movie.renderBody();
